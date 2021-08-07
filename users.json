@@ -1,0 +1,29 @@
+[
+    {    
+      "id": 1,
+      "first_name": "user1",
+      "last_name": "Test Last Name",
+      "email": "ydalesco0@test.com",
+      "gender": "Genderfluid",
+      "ip_address": "164.215.194.36",
+      "age": 65
+  },
+  {    
+      "id": 2,
+      "first_name": "user2",
+      "last_name": "Test Last Name",
+      "email": "ydalesco0@test.com",
+      "gender": "Genderfluid",
+      "ip_address": "164.215.194.36",
+      "age": 65
+  },
+  {    
+      "id": 3,
+      "first_name": "user3",
+      "last_name": "Test Last Name",
+      "email": "ydalesco0@test.com",
+      "gender": "Genderfluid",
+      "ip_address": "164.215.194.36",
+      "age": 65
+  }
+]
