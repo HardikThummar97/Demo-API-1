@@ -1,10 +1,10 @@
-let express = require("express");
+let express = require("express"); //Importing express framework
 
-let app = express();
+let app = express(); //It's a function thus need to execute it;
 
-let users = require("./users.json");
+let users = require("./users.json"); //Importing users from loca; json file
 
-app.use(express.json());
+app.use(express.json()); //Allowing express to parse post data
 
 app.get("/", function (req, res) {
   res.send("Welcome to Home page");
@@ -17,8 +17,7 @@ app.get("/users", function (req, res) {
 app.post("/users", function (req, res) {
   let x = req.body;
   users.push(x);
-  res.send(`Updated succesfully
-  data: ${x}`);
+  res.send(users);
 });
 
 app.patch("/users/:id", function (req, res) {
@@ -43,6 +42,6 @@ app.delete("/users/:id", function (req, res) {
   res.send(users);
 });
 
-app.listen(8000, () => {
-  console.log("listening on port 8000");
+app.listen(8001, () => {
+  console.log("listening on port 8001");
 });
